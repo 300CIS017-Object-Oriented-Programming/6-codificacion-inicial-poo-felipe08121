@@ -16,3 +16,21 @@ void Perro::saludar() {
         std::cout << nombre << " saluda." << std::endl;
     }
 }
+
+void Perro::alimentar() {
+
+    float cantidadAlimento;
+
+    if (tamanio == "Grande") {
+        cantidadAlimento = 1 * edad;
+    }
+    else if (tamanio== "Mediano") {
+        cantidadAlimento = 0.5 * edad;
+    }
+    else {
+        cantidadAlimento = 0.25 * edad;
+    }
+
+    std::cout << "Al perro " << nombre << " se le debe alimentar con: " << cantidadAlimento << "Kg de comida \n";
+
+}

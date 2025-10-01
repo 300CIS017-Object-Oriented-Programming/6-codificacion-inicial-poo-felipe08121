@@ -14,8 +14,9 @@ int main() {
     firulais.raza = "Mastin napolitano";
 
     std::cout << "Que ladre" << std::endl;
-    firulais.ladrar();
-    firulais.saludar("miercoles");
+    //firulais.ladrar();
+    //firulais.saludar("miercoles");
+    firulais.alimentar();
 
 
     Perro luna;
@@ -25,7 +26,7 @@ int main() {
     luna.tamanio = "Pequeno";
 
     std::cout << "Que ladre" << std::endl;
-    luna.ladrar();
+    //luna.ladrar();
 
     return 0;
 }
