@@ -31,6 +31,50 @@ void Perro::alimentar() {
         cantidadAlimento = 0.25 * edad;
     }
 
-    std::cout << "Al perro " << nombre << " se esta alimentando con: " << cantidadAlimento << "Kg de comida \n";
+    std::cout << "Al perro " << nombre << " se le esta alimentando con: " << cantidadAlimento << "Kg de comida \n";
 
+}
+
+Perro::Perro( std::string nombre , std::string color, int edad ,std::string tamanio, std::string raza  ) { // Implementacion del constructor
+    Perro::nombre = nombre;
+    Perro::color = color;
+    Perro::edad = edad;
+    Perro::tamanio = tamanio;
+    Perro::raza = raza;
+}
+
+
+std::string Perro::getRaza() {
+    return raza;
+}
+void Perro::setRaza( std::string raza) {
+     nombre = raza;
+}
+
+std::string Perro::getTamanio() {
+    return tamanio;
+}
+void Perro::setTamanio( std::string nuevoTamanio) {
+    tamanio = nuevoTamanio;
+}
+
+std::string Perro::getColor() {
+    return color;
+}
+void Perro:: setColor( std::string nuevoColor) {
+    color = nuevoColor;
+}
+
+std::string Perro::getNombre() {
+    return nombre;
+}
+void Perro::setNombre(std::string nuevoNombre) {
+    nombre = nuevoNombre;
+}
+
+int Perro::getEdad() {
+    return edad;
+}
+void Perro::setEdad( int nuevaEdad) {
+    edad = nuevaEdad;
 }
