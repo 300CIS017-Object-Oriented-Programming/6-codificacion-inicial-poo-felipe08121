@@ -31,6 +31,6 @@ void Perro::alimentar() {
         cantidadAlimento = 0.25 * edad;
     }
 
-    std::cout << "Al perro " << nombre << " se le debe alimentar con: " << cantidadAlimento << "Kg de comida \n";
+    std::cout << "Al perro " << nombre << " se esta alimentando con: " << cantidadAlimento << "Kg de comida \n";
 
 }

@@ -10,12 +10,14 @@
 
 class Perro {
 
-public:
+private:
     std::string nombre;
     std::string color;
     std::string raza;
     std::string tamanio;
     int edad;
+
+public:
     void ladrar();
     void saludar();
     void alimentar();
