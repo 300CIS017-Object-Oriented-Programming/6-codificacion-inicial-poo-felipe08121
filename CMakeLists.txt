@@ -7,4 +7,6 @@ add_executable(2_ClaseObjetoModAcceso main.cpp Perro.cpp Perro.h
         Raza.cpp
         Raza.h
         Veterinario.cpp
-        Veterinario.h)
+        Veterinario.h
+        Duenio.cpp
+        Duenio.h)
