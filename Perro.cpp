@@ -78,3 +78,11 @@ void Perro::setEdad( int nuevaEdad) {
 void Perro::setRaza(Raza* nuevaRaza) {
     raza = nuevaRaza;
 }
+
+Veterinario* Perro::getVeterinario() {
+    return veterinario;
+}
+
+void Perro::setVeterinario( Veterinario* nuevoVeterinario) {
+    veterinario = nuevoVeterinario;
+}

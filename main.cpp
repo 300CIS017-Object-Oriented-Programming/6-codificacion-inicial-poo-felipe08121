@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Perro.h"
 #include "Raza.h"
+#include "Veterinario.h"
 
 int main() {
 
@@ -18,11 +19,16 @@ int main() {
     Raza maltes( "Italia","Maltes");
 
     firulais.setRaza(&mastinNapolitano);
-    std::cout << "La Raza de " << firulais.getNombre() << " es: " << firulais.getRaza()->getRaza() << ""
-    ", Cuyo pais de origen es: "<< firulais.getRaza()->getPaisOrigen();
+    std::cout << "La Raza de " << firulais.getNombre() << " es: " << firulais.getRaza()->getRaza() <<
+    ", Cuyo pais de origen es: "<< firulais.getRaza()->getPaisOrigen() << "\n";
     // al metodo get Raza del objeto "firulais" (de tipo Perro) tengo que apuntar al metodo get (en este
     // caso getRaza) para obtener la informacion del tipo (atributo de la clase Raza) raza.
 
+    Veterinario Carlos ("Carlos Giraldo", 30);
+    firulais.setVeterinario(&Carlos);
+    std::cout << "El veterinario de: " << firulais.getNombre() << " es: "
+        << firulais.getVeterinario()->getNombre() <<", que tiene: " << firulais.getVeterinario()->getAniosExperiencia()
+    << " anios de Experiencia\n";
 
 
 
