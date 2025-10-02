@@ -4,6 +4,7 @@
 
 #include "Perro.h"
 
+
 void Perro::ladrar() {
 
     std::cout << " Esta ladrando " << nombre << " tengo " << edad << " anios " << std::endl;
@@ -35,20 +36,11 @@ void Perro::alimentar() {
 
 }
 
-Perro::Perro( std::string nombre , std::string color, int edad ,std::string tamanio, std::string raza  ) { // Implementacion del constructor
+Perro::Perro( std::string nombre , std::string color, int edad ,std::string tamanio) { // Implementacion del constructor
     Perro::nombre = nombre;
     Perro::color = color;
     Perro::edad = edad;
     Perro::tamanio = tamanio;
-    Perro::raza = raza;
-}
-
-
-std::string Perro::getRaza() {
-    return raza;
-}
-void Perro::setRaza( std::string raza) {
-     nombre = raza;
 }
 
 std::string Perro::getTamanio() {
@@ -77,4 +69,12 @@ int Perro::getEdad() {
 }
 void Perro::setEdad( int nuevaEdad) {
     edad = nuevaEdad;
+}
+
+ Raza* Perro::getRaza() {
+    return raza;
+}
+
+void Perro::setRaza(Raza* nuevaRaza) {
+    raza = nuevaRaza;
 }
