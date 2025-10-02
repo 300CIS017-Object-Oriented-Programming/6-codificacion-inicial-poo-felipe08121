@@ -3,6 +3,7 @@
 //
 
 #include "Perro.h"
+#include "Duenio.h"
 
 
 void Perro::ladrar() {
@@ -85,4 +86,13 @@ Veterinario* Perro::getVeterinario() {
 
 void Perro::setVeterinario( Veterinario* nuevoVeterinario) {
     veterinario = nuevoVeterinario;
+}
+
+
+Duenio* Perro::getDuenio() {
+    return duenio;
+}
+
+void Perro::setDuenio( Duenio* nuevoDuenio) {
+    duenio = nuevoDuenio;
 }

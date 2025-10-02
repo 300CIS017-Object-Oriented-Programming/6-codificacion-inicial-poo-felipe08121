@@ -9,6 +9,9 @@
 #include <iostream>
 #include "Raza.h"
 #include "Veterinario.h"
+//#include "Duenio.h"
+
+class Duenio;
 
 class Perro {
 
@@ -18,6 +21,7 @@ private:
     std::string tamanio;
     Raza * raza; // Tengo que pasar la otra clase como un puntero (como referencia)
     Veterinario * veterinario;
+    Duenio * duenio;
     int edad;
 
 public:
@@ -45,6 +49,9 @@ public:
 
     Veterinario* getVeterinario();
     void setVeterinario( Veterinario* nuevoVeterinario);
+
+    Duenio* getDuenio();
+    void setDuenio( Duenio* nuevoDuenio);
 };
 
 #endif //INC_1_CLASEOBJETO_PERRO_H

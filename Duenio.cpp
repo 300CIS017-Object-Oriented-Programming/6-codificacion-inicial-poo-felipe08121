@@ -3,6 +3,7 @@
 //
 
 #include "Duenio.h"
+#include "Perro.h"
 
 Duenio::Duenio(std::string nombre, int edad, Perro * perro) {
     Duenio::nombre = nombre;

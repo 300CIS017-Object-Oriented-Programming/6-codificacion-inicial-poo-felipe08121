@@ -6,7 +6,10 @@
 #define INC_2_CLASEOBJETOMODACCESO_DUENIO_H
 #include <iostream>
 #include <string>
-#include "Perro.h"
+//#include "Perro.h"
+
+class Perro;
+
 
 class Duenio {
 private:

@@ -37,6 +37,8 @@ int main() {
         "\nPerro: " << juan.getPerro()->getNombre()<< "\nVeterinario: " << juan.getPerro()->getVeterinario()
     ->getNombre() << "\n";
 
+    firulais.setDuenio(&juan);
+    std::cout << "\nEl duenio de " << firulais.getNombre() << " es: " << firulais.getDuenio()->getNombre()<<"\n" ;
 
 
 /*
